@@ -2,9 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+    <title>Tbilisi Times</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
 <body>
 
+<div class="header">
+    <h1>Tbilisi Times</h1>
+</div>
+
+<form>
+    <label id="text-label">
+        <input type="text" id="text-label-header" placeholder="Type blog title">
+        <textarea rows="7" cols="70" id="text-input" placeholder="Type blog descriptions" ></textarea>
+    </label>
+    <button type="button" class="submit-btn">Submit</button>
+</form>
+
+
+<div class="textContainer">
+    <div class="box">
+        <div class="text-title"></div>
+        <div class="text-description"></div>
+
+        <div class="buttons-div">
+            <button type="button" class="edit-btn e-d-buttons" >Edit</button>
+            <button type="button" class="del-btn e-d-buttons">Delete</button>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script src="script.js"></script>
 </body>
 </html>
