@@ -14,69 +14,49 @@ body {
 }
 
 
-.box{
-    width: 700px;
-    height: 500px;
-    border: 1px solid green;
+.item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid red;
+    word-wrap: break-word;
+
 }
 
-#text-input{
-    height: 200px;
-}
-#text-label{
+
+#input-text{
     display: flex;
     flex-direction: column;
     width: 700px;
 }
-#text-label-header{
+
+
+#titleInput{
     padding-bottom: 20px;
     font-size: 20px;
     font-weight: bold;
 }
 
-.textContainer{
-    border: 1px solid red;
-    visibility: hidden;
-    display: flex;
-}
-.box {
-    width: 50vh;
-    height: 400px;
-    margin: 10px;
-    padding: 20px;
-
-
+#descriptionInput{
+    height: 200px;
 }
 
-.text-title{
-    text-align: center;
-    border: 1px solid red;
-    padding: 20px;
-    font-weight: bold;
-    font-size:1.5rem;
-    overflow: auto;
-}
 
-.text-description{
-    border: 1px solid red;
-    height: 270px;
-    padding: 10px;
-    word-wrap: break-word;
-    /*overflow: auto;*/
-}
-
-.buttons-div{
-    display: flex;
-    padding: 10px;
+/*************************** buttons - create ***************************/
+.buttons_div {
+    border-top: 1px solid gray;
     justify-content: center;
+    display: flex;
+    flex-direction: row;
+
 }
-.e-d-buttons{
+.btn-all {
     margin: 5px;
     padding: 10px 30px;
+    display: inline-block;
+
 }
 
-/*************************** buttons - submit ***************************/
-.submit-btn{
+#btn-create {
     font-family: Roboto, sans-serif;
     font-weight: 0;
     font-size: 14px;
@@ -96,7 +76,7 @@ body {
     box-shadow: rgb(0, 0, 0) 0 0 0 0;
 }
 
-.submit-btn:hover{
+#btn-create:hover{
     transition : 1000ms;
     transform : translateY(-0px);
     background-color: #fff;
@@ -104,9 +84,7 @@ body {
     border: solid 2px #2b9125;
 }
 
-/*************************** buttons - edit ***************************/
-
-.edit-btn{
+.btn-edit{
     font-family: Roboto, sans-serif;
     font-weight: 0;
     font-size: 14px;
@@ -126,7 +104,7 @@ body {
     box-shadow: rgb(0, 0, 0) 0 0 0 0;
 }
 
-.edit-btn:hover{
+.btn-edit:hover{
     transition : 1000ms;
     transform : translateY(-0px);
     background-color: #fff;
@@ -135,7 +113,7 @@ body {
 }
 
 /*************************** buttons - delete ***************************/
-.del-btn{
+.btn-delete{
     font-family: Roboto, sans-serif;
     font-weight: 0;
     font-size: 14px;
@@ -155,7 +133,7 @@ body {
     box-shadow: rgb(0, 0, 0) 0 0 0 0;
 }
 
-.del-btn:hover{
+.btn-delete:hover{
     transition : 1000ms;
     transform : translateY(-0px);
     background-color: #fff;
