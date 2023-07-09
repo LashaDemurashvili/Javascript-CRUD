@@ -43,12 +43,14 @@ function displayItems() {
         const div = document.createElement('div');
         div.className = 'item';
 
-        const nameElement = document.createElement('p');
-        nameElement.innerText = `Blog Title: \n${item.title}`;
-        div.appendChild(nameElement);
+        const titleElement = document.createElement('p');
+        titleElement.innerText = `${item.title} \n`;
+        titleElement.setAttribute('class', 'show-title')
+        div.appendChild(titleElement);
 
         const descriptionElement = document.createElement('p');
-        descriptionElement.innerText = `Blog Description: \n${item.description}`;
+        descriptionElement.innerText = `${item.description}`;
+        descriptionElement.setAttribute('class', 'show-description')
         div.appendChild(descriptionElement);
 
         // add new div for buttons

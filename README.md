@@ -1,1 +1,1 @@
-# simple blog website using CRUD methods  
+# simple blog website using JavaScript CRUD methods  
