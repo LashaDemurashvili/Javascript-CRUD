@@ -1,2 +1,4 @@
-# Byte-compiled / optimized / DLL files
-.idea/
+# file: ~/.gitignore_global
+
+.DS_Store
+.idea
